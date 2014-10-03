@@ -17,48 +17,48 @@ public class LadderMainTest {
 	}
 	
 	@Test
-	public void Ãâ¹ßÁöÁ¡À»ÀÔ·ÂÇÏ¸éµµÂøÁöÁ¡Ãâ·Â1() {
+	public void ì¶œë°œì§€ì ì„ì…ë ¥í•˜ë©´ë„ì°©ì§€ì ì„ì¶œë ¥1() {
 		int actual = ladder.run(10, 6, 1);
 		assertThat(actual, is(6));
 	}
 	
 	@Test
-	public void Ãâ¹ßÁöÁ¡À»ÀÔ·ÂÇÏ¸éµµÂøÁöÁ¡Ãâ·Â2() {
+	public void ì¶œë°œì§€ì ì„ì…ë ¥í•˜ë©´ë„ì°©ì§€ì ì„ì¶œë ¥2() {
 		int actual = ladder.run(10, 6, 3);
 		assertThat(actual, is(5));
 	}
 	
 	@Test
-	public void Ãâ¹ßÁöÁ¡À»ÀÔ·ÂÇÏ¸éµµÂøÁöÁ¡Ãâ·Â3() {
+	public void ì¶œë°œì§€ì ì„ì…ë ¥í•˜ë©´ë„ì°©ì§€ì ì„ì¶œë ¥3() {
 		int actual = ladder.run(10, 6, 6);
 		assertThat(actual, is(3));
 	}
 	
 	@Test
-	public void Ãâ¹ßÁöÁ¡À»ÀÔ·ÂÇÏ¸éµµÂøÁöÁ¡Ãâ·Â4() {
+	public void ì¶œë°œì§€ì ì„ì…ë ¥í•˜ë©´ë„ì°©ì§€ì ì„ì¶œë ¥4() {
 		int actual = ladder.run(10, 6, 5);
 		assertThat(actual, is(2));
 	}
 	
 	@Test
-	public void ´Ù¾çÇÑÅ©±âÀÇ»ç´Ù¸®() {
+	public void ë‹¤ì–‘í•œí¬ê¸°ì˜ì‚¬ë‹¤ë¦¬íƒ€ê¸°() {
 		Random random = new Random();
 		int rowSize = random.nextInt(10) + 3;
 		int colSize = random.nextInt(5) + 3;
 		int startNum = random.nextInt(colSize) + 1;
 
-		System.out.println("½ÃÀÛ ÁöÁ¡ : " + startNum);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : " + startNum);
 		int result = ladder.run(rowSize, colSize, startNum);
-		System.out.println("°á°ú : " + result);
+		System.out.println("ï¿½ï¿½ï¿½ : " + result);
 	}
 	
 	@Test
-	public void À½¼ö°¡ÀÔ·ÂµÇ¸é¿¡·¯() throws Exception {
+	public void ìŒìˆ˜ê°’ì´ì…ë ¥ë˜ì—ˆì„ë•Œ() throws Exception {
 		ladder.run(-1, 10, 1);
 	}
 	
 	@Test
-	public void ¹üÀ§¸¦¹ş¾î³­½ÃÀÛÁ¡À»ÀÔ·ÂÇßÀ»¶§() throws Exception {
+	public void ë²”ìœ„ë¥¼ë„˜ì–´ì„ ì‹œì‘ì§€ì ì„ì…ë ¥í–ˆì„ë•Œ() throws Exception {
 		ladder.run(6, 10, 11);
 	}
 

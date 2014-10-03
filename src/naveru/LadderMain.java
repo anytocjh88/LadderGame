@@ -75,7 +75,7 @@ public class LadderMain {
 			makeLadder(rowSize, colSize);
 			result =  startLadderGame(rowSize, colSize, startNum);
 		} catch (RuntimeException e) {
-			System.out.println("Àß¸øµÈ ÀÔ·Â °ªÀÔ´Ï´Ù.");
+			System.out.println("ì˜¬ë°”ë¥´ì§€ ì•Šì€ ì…ë ¥ ê°’ì…ë‹ˆë‹¤.");
 		}
 		
 		return result;
